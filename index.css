@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+button,
+input {
+    background: none;
+    border: none;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: #333264;
+    display: flex;
+    height: 73.5px;
+}
+
+#logo-btn {
+    width: 43px;
+}
+
+#logo-btn img {
+    width: 100%;
+}
+
+#menu-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+#menu-text {
+    margin-right: 0.35rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;    
+}
+
+#arrow {
+    width: 15px;
+}
+
+#search-bar {
+    height: 45px;
+    margin: auto;
+    display: flex;
+    background: white;
+    border-radius: 1000px;
+}
+
+#search-btn img {
+    width: 20px;
+    transform: rotate(90deg);
+}
