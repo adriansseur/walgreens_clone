@@ -13,13 +13,18 @@ body {
 }
 
 header {
+    padding: 0 0.8rem;
     background: #333264;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 73.5px;
 }
 
 #logo-btn {
-    width: 43px;
+    min-width: 33px;
+    max-width: 33px;
+    padding: 0;
 }
 
 #logo-btn img {
@@ -29,7 +34,8 @@ header {
 #menu-btn {
     display: flex;
     align-items: center;
-    margin-right: 1rem;
+    margin: 0 1rem;
+    padding: 0;
 }
 
 #menu-text {
@@ -41,18 +47,37 @@ header {
 }
 
 #arrow {
-    width: 15px;
+    width: 12px;
 }
 
 #search-bar {
     height: 45px;
-    margin: auto;
     display: flex;
     background: white;
     border-radius: 1000px;
 }
 
+#search-bar input {
+    width: 140px;
+}
+
+#search-bar input::placeholder {
+    padding-left: 1rem;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#search-btn {
+    line-height: 0px;
+    margin: 0.75rem;
+    padding: 0;
+}
+
 #search-btn img {
     width: 20px;
     transform: rotate(90deg);
+}
+
+#cart {
+    display: flex;
 }
