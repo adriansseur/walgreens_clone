@@ -46,10 +46,6 @@ header {
     font-size: 16px;    
 }
 
-#arrow {
-    width: 12px;
-}
-
 #search-bar {
     height: 45px;
     display: flex;
@@ -80,4 +76,30 @@ header {
 
 #cart {
     display: flex;
+}
+
+#location {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+#nearest-store {
+    display: flex;
+    align-items: center;
+}
+
+#nearest-store p {
+    margin: 8px auto;
+}
+
+#nearest-store button {
+    display: flex;
+    align-items: center;
+}
+
+#location .arrow path {
+    stroke: black;
 }
