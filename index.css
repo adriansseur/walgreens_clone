@@ -86,20 +86,39 @@ header {
     border-bottom: 1px solid #cfcfcf;
 }
 
+#location button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
 #nearest-store {
     display: flex;
     align-items: center;
 }
 
 #nearest-store p {
-    margin: 8px auto;
+    margin: 8px 0.3rem;
+    font-weight: 300;
 }
 
 #nearest-store button {
-    display: flex;
-    align-items: center;
+    color: #284b9b;
+    line-height: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#location-arrow {
+    margin-left: 0.25rem;
 }
 
 #location .arrow path {
     stroke: black;
+}
+
+#language button {
+    margin: 0 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: #284b9b;
 }
