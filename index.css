@@ -122,3 +122,53 @@ header {
     font-weight: 400;
     color: #284b9b;
 }
+
+#hero {
+    background: #323264;
+    border: 1px solid #323264;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0 0 4.5rem 0;
+}
+
+#hero h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 32;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+#hero-boxes {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    margin: auto 2rem;
+    gap: 2rem;
+}
+
+#hero-boxes button {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+#hero-boxes button img {
+    max-width: 33%;
+    min-width: 55px;
+    display: block;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+#hero-boxes button p {
+    text-align: center;
+    margin: 0;
+    color: #284b9b;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
+
+footer {
+    height: 1500px;
+}
