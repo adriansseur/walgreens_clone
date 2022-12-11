@@ -19,6 +19,9 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 73.5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #logo-btn {
@@ -141,7 +144,7 @@ header {
 
 #hero-boxes {
     display: grid;
-    grid-template: auto auto / auto auto;
+    grid-template: auto auto / 1fr 1fr;
     margin: auto 2rem;
     gap: 2rem;
 }
@@ -167,6 +170,13 @@ header {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.2rem;
+}
+
+#snow-btn {
+    background: white;
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
 }
 
 footer {
