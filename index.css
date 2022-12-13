@@ -87,6 +87,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #cfcfcf;
+    z-index: 0;
 }
 
 #location button {
@@ -182,13 +183,9 @@ header {
 
 .snowflake {
     position: absolute;
-    top: 20px;
+    top: -500px;
 }
 
 footer {
     height: 1500px;
-}
-
-@keyframes fall {
-    /* animation here */
 }
