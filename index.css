@@ -186,6 +186,52 @@ header {
     top: -500px;
 }
 
+#promo {
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+}
+
+#promo h1 {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #333264;
+    margin-bottom: 0;
+}
+
+#promo h2 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 0.5rem;
+    margin-bottom: 24.12px;
+}
+
+#promo img {
+    width: 100%;
+}
+
+#promo div {
+    background: white;
+    margin: 0 2rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    border-radius: 10px;
+    box-shadow:
+        0.3px 0.3px 2.2px rgba(0, 0, 0, 0.02),
+        0.7px 0.7px 5.3px rgba(0, 0, 0, 0.028),
+        1.3px 1.3px 10px rgba(0, 0, 0, 0.035),
+        2.2px 2.2px 17.9px rgba(0, 0, 0, 0.042),
+        4.2px 4.2px 33.4px rgba(0, 0, 0, 0.05),
+        10px 10px 80px rgba(0, 0, 0, 0.07);
+}
+
+#promo div h1 {
+    color: #e62600;
+
+}
+
 footer {
     height: 1500px;
 }
