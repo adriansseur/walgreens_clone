@@ -204,6 +204,7 @@ header {
     text-align: center;
     font-size: 22px;
     margin-top: 0.5rem;
+    color: #333264;
     margin-bottom: 24.12px;
 }
 
@@ -225,11 +226,16 @@ header {
         2.2px 2.2px 17.9px rgba(0, 0, 0, 0.042),
         4.2px 4.2px 33.4px rgba(0, 0, 0, 0.05),
         10px 10px 80px rgba(0, 0, 0, 0.07);
+    padding: 0 2rem;
 }
 
 #promo div h1 {
     color: #e62600;
+    font-weight: 600;
+}
 
+#promo div h2 {
+    font-weight: 300;
 }
 
 footer {
