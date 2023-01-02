@@ -20,8 +20,9 @@ function spawnSnow(amount) {
 // Append style for each snowflake to the head
 function addCss(rule) {
     let css = document.createElement('style');
-    css.type = 'text/css';
-    css.appendChild(document.createTextNode(rule)); // Support for the rest
+    // css.type = 'text/css';
+    // css.appendChild(document.createTextNode(rule)); // Support for the rest
+    css.textContent += rule
     document.getElementsByTagName("head")[0].appendChild(css);
 }
 
