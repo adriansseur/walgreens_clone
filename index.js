@@ -12,7 +12,7 @@ function spawnSnow(amount) {
         let snowflake = document.createElement('img')
         snowflake.src = 'media/snowflake.png'
         snowflake.className = 'snowflake'
-        snowflake.style.right = `${Math.random() * window.innerWidth}px`
+        // snowflake.style.right = `${Math.random() * window.innerWidth}px`
         heroDiv.appendChild(snowflake)
     }
 }
@@ -29,16 +29,19 @@ function addCss(rule) {
 // Math
 function randomInt(value = 100) {
     return Math.floor(Math.random() * value) + 1;
+    // returns a number in range [1-100]
 }
 
 function randomIntRange(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+    // used for fall duration
 }
 
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
+    // used for randomYoyoTime
 }
 
 // Create style for snowflake
@@ -50,7 +53,7 @@ function spawnSnowCSS(snowDensity = 200) {
     // }
 
     for (let i = 1; i < snowDensity; i++) {
-        let randomX = Math.random() * 100; // vw
+        let randomX = Math.random() * 90; // vw
         let randomOffset = Math.random() * 10 // vw;
         let randomXEnd = randomX + randomOffset;
         let randomXEndYoyo = randomX + (randomOffset / 2);
@@ -64,7 +67,7 @@ function spawnSnowCSS(snowDensity = 200) {
         rule += `
         .${snowflakeName}:nth-child(${i}) {
             opacity: ${opacity};
-            transform: translate(${randomX}vw, -10px) scale(${randomScale});
+            transform: translate(${randomX}vw, -10px);scale(${randomScale});
             animation: fall-${i} ${fallDuration}s ${fallDelay}s linear infinite;
         }
         @keyframes fall-${i} {
