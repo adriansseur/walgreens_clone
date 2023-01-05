@@ -134,6 +134,7 @@ header {
     padding: 0 0 4.5rem 0;
     position: relative;
     z-index: 0;
+    overflow: hidden;
 }
 
 #hero h1 {

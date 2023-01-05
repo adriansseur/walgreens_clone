@@ -86,6 +86,13 @@ function spawnSnowCSS(snowDensity = 200) {
 
 // start snow
 snowBtn.addEventListener("click", function () {
-    spawnSnowCSS(snowflakeCount)
-    spawnSnow(snowflakeCount)
+    if (heroDiv.querySelectorAll(".snowflake").length) {
+        for (let i of document.querySelectorAll(".snowflake")) {
+            heroDiv.removeChild(i)
+        }
+    }
+    else {
+        spawnSnowCSS(snowflakeCount)
+        spawnSnow(snowflakeCount)
+    }
 })
