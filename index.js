@@ -10,12 +10,17 @@ let pageHeightVH = (100 * bodyHeightPx / window.innerHeight);
 function spawnSnow(amount) {
     for (let i = 0; i < amount; i++) {
         let snowflake = document.createElement('img')
-        snowflake.src = 'media/snowflake.png'
+        let draw = Math.floor(Math.random() * 3) + 1
+        let result = draw === 1 ? "red" : draw === 2 ? "blue" : "white"
+        snowflake.src = `media/${result}_confetti.png`
         snowflake.className = 'snowflake'
         // snowflake.style.right = `${Math.random() * window.innerWidth}px`
         heroDiv.appendChild(snowflake)
     }
+
 }
+
+
 
 // Append style for each snowflake to the head
 function addCss(rule) {
@@ -62,12 +67,11 @@ function spawnSnowCSS(snowDensity = 200) {
         let randomScale = Math.random();
         let fallDuration = randomIntRange(10, pageHeightVH / 10 * 3); // s
         let fallDelay = randomInt(pageHeightVH / 10 * 3) * -1; // s
-        let opacity = Math.random();
+        // let opacity = Math.random();
 
         rule += `
         .${snowflakeName}:nth-child(${i}) {
-            opacity: ${opacity};
-            transform: translate(${randomX}vw, -10px);scale(${randomScale});
+            transform: translate(${randomX}vw, -10px) scale(${randomScale});
             animation: fall-${i} ${fallDuration}s ${fallDelay}s linear infinite;
         }
         @keyframes fall-${i} {
