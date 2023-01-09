@@ -1,5 +1,15 @@
 * {
     box-sizing: border-box;
+    --dark-blue: #333264;
+    --medium-blue: #284b9b;
+    --my-font: 'Source Sans Pro', sans-serif;
+    --my-shadow: 
+                0.3px 0.3px 2.2px rgba(0, 0, 0, 0.02),
+                0.7px 0.7px 5.3px rgba(0, 0, 0, 0.028),
+                1.3px 1.3px 10px rgba(0, 0, 0, 0.035),
+                2.2px 2.2px 17.9px rgba(0, 0, 0, 0.042),
+                4.2px 4.2px 33.4px rgba(0, 0, 0, 0.05),
+                10px 10px 80px rgba(0, 0, 0, 0.07);
 }
 
 button,
@@ -82,16 +92,15 @@ header {
 }
 
 #location {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--my-font);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #cfcfcf;
     z-index: 2;
 }
 
 #location button {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--my-font);
     font-weight: 700;
 }
 
@@ -106,7 +115,7 @@ header {
 }
 
 #nearest-store button {
-    color: #284b9b;
+    color: var(--medium-blue);
     line-height: 0;
     padding: 0;
     font-size: 16px;
@@ -124,13 +133,12 @@ header {
     margin: 0 1rem;
     font-size: 12px;
     font-weight: 400;
-    color: #284b9b;
+    color: var(--medium-blue);
 }
 
 #hero {
-    background: #323264;
-    border: 1px solid #323264;
-    font-family: 'Source Sans Pro', sans-serif;
+    background: var(--dark-blue);
+    font-family: var(--my-font);
     padding: 0 0 4.5rem 0;
     position: relative;
     z-index: 0;
@@ -193,13 +201,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow:
-    0.3px 0.3px 2.2px rgba(0, 0, 0, 0.02),
-    0.7px 0.7px 5.3px rgba(0, 0, 0, 0.028),
-    1.3px 1.3px 10px rgba(0, 0, 0, 0.035),
-    2.2px 2.2px 17.9px rgba(0, 0, 0, 0.042),
-    4.2px 4.2px 33.4px rgba(0, 0, 0, 0.05),
-    10px 10px 80px rgba(0, 0, 0, 0.07);
+    box-shadow: var(--my-shadow);
 }
 
 .snowflake {
@@ -210,7 +212,7 @@ header {
 }
 
 #promo {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--my-font);
     position: relative;
 }
 
@@ -242,13 +244,7 @@ header {
     bottom: 0;
     transform: translateY(50%);
     border-radius: 10px;
-    box-shadow:
-        0.3px 0.3px 2.2px rgba(0, 0, 0, 0.02),
-        0.7px 0.7px 5.3px rgba(0, 0, 0, 0.028),
-        1.3px 1.3px 10px rgba(0, 0, 0, 0.035),
-        2.2px 2.2px 17.9px rgba(0, 0, 0, 0.042),
-        4.2px 4.2px 33.4px rgba(0, 0, 0, 0.05),
-        10px 10px 80px rgba(0, 0, 0, 0.07);
+    box-shadow: var(--my-shadow);
     padding: 0 2rem;
 }
 
@@ -277,7 +273,7 @@ header {
 
 #newsletter input {
     margin: 1rem 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--my-font);
     font-size: 16px;
     width: 220px;
 }
@@ -288,11 +284,11 @@ header {
 
 #email button {
     margin: 0.5rem 0.75rem;
-    background: #333264;
+    background: var(--dark-blue);
     border-radius: 100px;
     padding: 0.75rem 1.25rem;
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--my-font);
     font-size: 16px;
     font-weight: 400;
 }
@@ -306,8 +302,8 @@ header {
 }
 
 #links p {
-    color: #284b9b;
-    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--medium-blue);
+    font-family: var(--my-font);
     font-weight: 600;
     border-right: 1px solid #525252;
     padding: 0 1rem;
@@ -320,12 +316,11 @@ header {
 }
 
 #copyright {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--my-font);
     font-size: 16px;
     line-height: 26px;
 }
 
 footer {
-    /* height: 1500px; */
     text-align: center;
 }

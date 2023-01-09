@@ -14,19 +14,13 @@ function spawnSnow(amount) {
         let result = draw === 1 ? "red" : draw === 2 ? "blue" : "white"
         snowflake.src = `media/${result}_confetti.png`
         snowflake.className = 'snowflake'
-        // snowflake.style.right = `${Math.random() * window.innerWidth}px`
         heroDiv.appendChild(snowflake)
     }
-
 }
-
-
 
 // Append style for each snowflake to the head
 function addCss(rule) {
     let css = document.createElement('style');
-    // css.type = 'text/css';
-    // css.appendChild(document.createTextNode(rule)); // Support for the rest
     css.textContent += rule
     document.getElementsByTagName("head")[0].appendChild(css);
 }
@@ -53,9 +47,6 @@ function getRandomArbitrary(min, max) {
 function spawnSnowCSS(snowDensity = 200) {
     let snowflakeName = "snowflake";
     let rule = ``;
-    // if (typeof baseCss !== 'undefined') {
-    //     rule = baseCss;
-    // }
 
     for (let i = 1; i < snowDensity; i++) {
         let randomX = Math.random() * 90; // vw
@@ -67,7 +58,6 @@ function spawnSnowCSS(snowDensity = 200) {
         let randomScale = Math.random();
         let fallDuration = randomIntRange(10, pageHeightVH / 10 * 3); // s
         let fallDelay = randomInt(pageHeightVH / 10 * 3) * -1; // s
-        // let opacity = Math.random();
 
         rule += `
         .${snowflakeName}:nth-child(${i}) {
@@ -81,7 +71,6 @@ function spawnSnowCSS(snowDensity = 200) {
             to {
                 transform: translate(${randomXEndYoyo}vw, ${pageHeightVH}vh) scale(${randomScale});
             }
-            
         }
         `
     }
