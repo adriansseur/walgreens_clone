@@ -64,6 +64,8 @@ header {
     display: flex;
     background: white;
     border-radius: 1000px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 #search-bar input {
@@ -323,4 +325,26 @@ header {
 
 footer {
     text-align: center;
+}
+
+
+@media (min-width: 769px) {
+
+    #search-bar {
+        max-width: 320px;
+        margin: auto;
+        transform: translateX(-45px);
+    }
+}
+
+@media (min-width: 992px) {
+    #search-bar {
+        max-width: 420px;
+    }
+}
+
+@media (min-width: 1330px) {
+    #search-bar {
+        max-width: 550px;
+    }
 }
