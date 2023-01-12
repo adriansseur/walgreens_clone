@@ -215,7 +215,9 @@ header {
 
 #promo {
     font-family: var(--my-font);
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #promo h1 {
@@ -241,10 +243,9 @@ header {
 
 #promo div {
     background: white;
-    margin: 0 2rem;
-    position: absolute;
-    bottom: 0;
-    transform: translateY(50%);
+    margin: 0 auto;
+    width: 85%;
+    transform: translateY(-50%);
     border-radius: 10px;
     box-shadow: var(--my-shadow);
     padding: 0 2rem;
@@ -332,10 +333,23 @@ footer {
         max-width: 500px;
         margin: auto;
     }
+
+    #promo img {
+        width: 525px;
+        margin: auto;
+        display: block;
+    }
+
+    #promo div {
+        width: 450px;
+    }
 }
 
-
 @media (min-width: 769px) {
+
+    header {
+        position: static;
+    }
 
     #search-bar {
         max-width: 320px;
@@ -344,7 +358,6 @@ footer {
     }
 
     #snow-btn {
-        /* background: red; */
         right: 6rem;
         top: 1.25rem;
     }
@@ -361,6 +374,15 @@ footer {
         padding: 0;
         width: 200px;
         height: 175px;
+    }
+
+    #promo img {
+        width: 700px;
+        border-radius: 10px;
+    }
+
+    #promo div {
+        width: 650px;
     }
 }
 
@@ -386,6 +408,14 @@ footer {
     #hero-boxes button p {
         font-size: 15px;
     }
+
+    #promo img {
+        width: 925px;
+    }
+
+    #promo div {
+        width: 825px;
+    }
 }
 
 @media (min-width: 1030px) {
@@ -401,6 +431,14 @@ footer {
     #hero-boxes button {
         height: 210px;
     }
+
+    #promo h1 {
+        font-size: 50px;
+    }
+
+    #promo h2 {
+        font-size: 28px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -413,5 +451,13 @@ footer {
     #hero-boxes button {
         width: 300px;
         padding: 1rem 3rem;
+    }
+
+    #promo img {
+        width: 1100px;
+    }
+
+    #promo div {
+        width: 1000px;
     }
 }
