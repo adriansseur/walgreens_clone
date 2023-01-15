@@ -268,7 +268,8 @@ header {
 
 #newsletter #email {
     background: white;
-    margin: 2rem 1.75rem;
+    margin: 2rem auto;
+    max-width: 400px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -326,6 +327,10 @@ header {
 
 footer {
     text-align: center;
+}
+
+#copyright {
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 575px) {
